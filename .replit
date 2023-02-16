@@ -1,0 +1,22 @@
+language = "nix"
+run = ["npm", "start"]
+
+[packager]
+language = "nodejs-npm"
+
+[nix]
+channel = "stable-21_11"
+
+[debugger]
+
+[unitTest]
+language = "nodejs"
+
+[env]
+XDG_CONFIG_HOME = "/home/runner/.config"
+PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin"
+npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global"
+
+[auth]
+pageEnabled = false
+buttonEnabled = false
